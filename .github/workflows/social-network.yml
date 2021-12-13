@@ -40,7 +40,7 @@ jobs:
         env:
            RAILS_ENV: test
            SOCIAL_NETWORK_DATABASE_PASSWORD: postgres
-      deploy:
+    deploy:
       needs: test
       runs-on: ubuntu-latest
       steps:
